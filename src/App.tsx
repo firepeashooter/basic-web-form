@@ -2,17 +2,20 @@ import UserInfo from "./FormPages/UserInfo"
 import MedicalHistory from "./FormPages/MedicalHistory"
 import LifestyleHabits from "./FormPages/LifestyleHabits"
 import { useState } from "react"
+import SuccessBanner from "./Components/SuccessBanner"
 
 
 function App() {
 
 	//Track form page
 	const [currentStep, setCurrentStep] = useState(1)
+	const [isSubmitted, setIsSubmitted] = useState(false)
 
 	// Handle submission of the form
 	const handleFinalSubmit = (e: React.FormEvent) => {
 		e.preventDefault()
 		console.log("Submitting Form!")
+		setIsSubmitted(true)
 	}
 
 	return (
@@ -36,9 +39,12 @@ function App() {
 				)}
 
 				{currentStep === 3 && (
-					<LifestyleHabits
-						onPrev={() => setCurrentStep(2)}
-					/>
+					<div className="flex flex-col gap-5">
+						<LifestyleHabits
+							onPrev={() => setCurrentStep(2)}
+						/>
+						{isSubmitted && <SuccessBanner />}
+					</div>
 				)}
 
 			</form>
