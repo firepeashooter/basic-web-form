@@ -17,7 +17,7 @@ function MedicalHistory({ onNext, onPrev }: MedicalHistoryProps) {
 
 			<div className="flex flex-col gap-8">
 
-				<TextInput id="medicalid" label="Medical ID" />
+				<TextInput id="medicalid" label="Medical ID" type="text" />
 
 				<BloodTypeDropDown />
 

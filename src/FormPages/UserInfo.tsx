@@ -13,10 +13,10 @@ function UserInfo({ onNext }: UserInfoProps) {
 
 			<div className="flex flex-col gap-3 md:grid md:grid-cols-2 md:grid-rows-2">
 
-				<TextInput id="firstname" label="First Name" />
-				<TextInput id="lastname" label="Last Name" />
-				<TextInput id="email" label="Email" />
-				<TextInput id="phone" label="Phone Number" />
+				<TextInput id="firstname" label="First Name" type="text" />
+				<TextInput id="lastname" label="Last Name" type="text" />
+				<TextInput id="email" label="Email" type="email" />
+				<TextInput id="phone" label="Phone Number" type="number" />
 			</div>
 
 			<div className="flex justify-end">
