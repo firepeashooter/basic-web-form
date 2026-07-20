@@ -13,9 +13,9 @@ function UserInfo({ onNext }: UserInfoProps) {
 
 			<div className="flex flex-col gap-3 md:grid md:grid-cols-2 md:grid-rows-2">
 
-				<TextInput id="firstname" label="First Name" required />
-				<TextInput id="lastname" label="Last Name" required />
-				<TextInput id="email" label="Email" required />
+				<TextInput id="firstname" label="First Name" />
+				<TextInput id="lastname" label="Last Name" />
+				<TextInput id="email" label="Email" />
 				<TextInput id="phone" label="Phone Number" />
 			</div>
 

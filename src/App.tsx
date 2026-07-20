@@ -31,11 +31,13 @@ function App() {
 				{currentStep === 2 && (
 					<MedicalHistory
 						onNext={() => setCurrentStep(3)}
+						onPrev={() => setCurrentStep(1)}
 					/>
 				)}
 
 				{currentStep === 3 && (
 					<LifestyleHabits
+						onPrev={() => setCurrentStep(2)}
 					/>
 				)}
 
