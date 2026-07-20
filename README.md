@@ -1,75 +1,47 @@
-# React + TypeScript + Vite
+# Form Automation Sandbox
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal, highly predictable React + TypeScript + Tailwind CSS web application designed specifically as a controlled sandbox environment for testing end-to-end (E2E) testing frameworks, browser automation scripts, and autonomous AI web agents.
 
-Currently, two official plugins are available:
+This repository provides a standard web form, data-driven dropdowns, and interactive UI states to evaluate selectors, input handling, and dynamic DOM manipulation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- **Framework:** React 19 (Functional Components, Hooks)
+- **Build Tool:** Vite
+- **Language:** TypeScript (Strict Type Checking)
+- **Styling:** Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features & Testing Targets
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This application contains specific UI paradigms optimized for automation testing:
+- **Explicit Test Hooks:** Critical elements include native semantic HTML tags and predictable layouts to facilitate robust selector strategies (text-based, semantic roles, or structure).
+- **Dynamic Elements:** Dropdowns and contextual states that simulate real-world web form flows.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
 
-```
+Ensure you have [Node.js](https://nodejs.org/) installed (v18+ recommended).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/firepeashooter/basic-web-form.git](https://github.com/firepeashooter/basic-web-form.git)
+   cd basic-web-form
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Install Dependencies: 
+   ```bash
+   npm install
+   ```
+3. Start the local development server
+   ```bash
+   npm run dev
+   ```
 
-```
+The application will typically be accessible at http://localhost:5173
