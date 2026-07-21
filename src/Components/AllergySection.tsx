@@ -6,7 +6,7 @@ function AllergySection() {
 	const [hasAllergies, setHasAllergies] = useState(false);
 
 	return (
-		<div className="w-full">
+		<fieldset className="w-full">
 
 			{/* Question */}
 			<legend className="text-md font-semibold text-gray-700 pb-3">
@@ -55,7 +55,7 @@ function AllergySection() {
 				</div>
 			)}
 
-		</div>
+		</fieldset>
 	);
 }
 

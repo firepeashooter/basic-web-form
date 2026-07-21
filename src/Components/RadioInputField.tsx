@@ -7,7 +7,7 @@ interface RadioInputFieldProps {
 
 function RadioInputField({ legend, name }: RadioInputFieldProps) {
 	return (
-		<div className="w-full">
+		<fieldset className="w-full">
 
 			{/* Question */}
 			<legend className="text-md font-semibold text-gray-700 pb-3">
@@ -36,7 +36,7 @@ function RadioInputField({ legend, name }: RadioInputFieldProps) {
 					No
 				</label>
 			</div>
-		</div>
+		</fieldset>
 	)
 }
 
