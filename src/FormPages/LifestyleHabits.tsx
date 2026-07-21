@@ -1,4 +1,5 @@
 import DietarySection from '../Components/DietarySection';
+import MultiRadioInputField from '../Components/MultiRadioInputField';
 
 interface LifestyleHabitsProps {
 	onPrev: () => void;
@@ -12,6 +13,11 @@ function LifestyleHabits({ onPrev }: LifestyleHabitsProps) {
 
 			<div className="flex flex-col gap-4">
 				<DietarySection />
+				<MultiRadioInputField
+					question="How would you rate your average nights sleep quality over the last 30 days"
+					groupName="sleep quality"
+					buttonNames={["Poor (<5 hours)", "Fair (5-6 hours)", "Good (7-8 hours)", "Excellent (8+ hours)"]}
+				/>
 			</div>
 
 			<div className="flex justify-end gap-5">
