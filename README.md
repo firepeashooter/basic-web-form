@@ -23,6 +23,8 @@ This application contains specific UI paradigms optimized for automation testing
 
 ## Getting Started
 
+The form itself is hosted at https://medical-test-form.netlify.app/
+
 ### Prerequisites
 
 Ensure you have [Node.js](https://nodejs.org/) installed (v18+ recommended).
