@@ -1,5 +1,4 @@
 import DietarySection from '../Components/DietarySection';
-import SleepSliderSection from '../Components/SleepSliderSection';
 
 interface LifestyleHabitsProps {
 	onPrev: () => void;
@@ -12,7 +11,6 @@ function LifestyleHabits({ onPrev }: LifestyleHabitsProps) {
 			<h1 className="text-xl font-bold text-gray-800">Lifestyle & Habits</h1>
 
 			<div className="flex flex-col gap-4">
-				<SleepSliderSection />
 				<DietarySection />
 			</div>
 
