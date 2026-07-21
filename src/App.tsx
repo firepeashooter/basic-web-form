@@ -20,11 +20,11 @@ function App() {
 	}
 
 	return (
-		<div className="flex flex-col justify-start items-center bg-gray-200 w-full min-h-screen">
+		<div className="flex flex-col justify-start items-center bg-gray-200 w-full min-h-screen px-10 pb-20">
 			<Header />
 			<form
 				onSubmit={handleFinalSubmit}
-				className="w-3xl bg-gray-50 rounded-2xl shadow p-8"
+				className="max-w-3xl w-full bg-gray-50 rounded-2xl shadow p-8 mr-10 ml-10"
 			>
 
 				{currentStep === 1 && (
