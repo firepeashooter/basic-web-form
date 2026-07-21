@@ -3,6 +3,7 @@ import MedicalHistory from "./FormPages/MedicalHistory"
 import LifestyleHabits from "./FormPages/LifestyleHabits"
 import { useState } from "react"
 import SuccessBanner from "./Components/SuccessBanner"
+import Header from "./Components/Header"
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
 	}
 
 	return (
-		<div className="flex justify-center items-center bg-gray-200 w-full min-h-screen">
+		<div className="flex flex-col justify-start items-center bg-gray-200 w-full min-h-screen">
+			<Header />
 			<form
 				onSubmit={handleFinalSubmit}
 				className="w-3xl bg-gray-50 rounded-2xl shadow p-8"
