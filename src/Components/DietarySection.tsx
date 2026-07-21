@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-
+//TODO: Make a generic version of this
 function DietarySection() {
-	// 1. Define the options array
+	// Define the options array
 	const dietOptions = [
 		{ id: 'vegetarian', label: 'Vegetarian' },
 		{ id: 'vegan', label: 'Vegan' },
@@ -12,7 +12,7 @@ function DietarySection() {
 		{ id: 'none', label: 'No Dietary Restrictions' },
 	];
 
-	// 2. State to track an array of selected options
+	// State to track an array of selected options
 	const [selectedDiets, setSelectedDiets] = useState<string[]>([]);
 
 	const handleCheckboxChange = (id: string) => {
@@ -34,7 +34,7 @@ function DietarySection() {
 	};
 
 	return (
-		<div className="flex flex-col gap-1.5 w-full md:col-span-2 pt-2">
+		<fieldset className="flex flex-col gap-1.5 w-full md:col-span-2 pt-2">
 			<legend className="text-sm font-semibold text-gray-700">
 				Dietary Preferences / Restrictions <span className="text-xs font-normal text-gray-500">(Select all that apply)</span>
 			</legend>
@@ -65,7 +65,7 @@ function DietarySection() {
 					);
 				})}
 			</div>
-		</div>
+		</fieldset>
 	)
 }
 
