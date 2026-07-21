@@ -35,7 +35,7 @@ function DietarySection() {
 
 	return (
 		<fieldset className="flex flex-col gap-1.5 w-full md:col-span-2 pt-2">
-			<legend className="text-sm font-semibold text-gray-700">
+			<legend className="text-md font-semibold text-gray-700">
 				Dietary Preferences / Restrictions <span className="text-xs font-normal text-gray-500">(Select all that apply)</span>
 			</legend>
 
